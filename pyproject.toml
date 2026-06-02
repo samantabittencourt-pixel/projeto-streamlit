@@ -1,16 +1,14 @@
-[project]
+[tool.poetry]
 name = "projeto-pratico"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Your Name",email = "you@example.com"}
-]
-requires-python = ">=3.13"
-dependencies = [
-    "streamlit (>=1.58.0,<2.0.0)",
-    "pandas (>=3.0.3,<4.0.0)"
-]
+authors = ["Samanta Licinio <samanta.bittencourt@gmail.com>"]
+packages = [{ include = "projeto_pratico" }]
 
+[tool.poetry.dependencies]
+python = ">=3.13"
+streamlit = ">=1.58.0,<2.0.0"
+pandas = ">=3.0.3,<4.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
